@@ -1,0 +1,19 @@
+{
+  "period_start": "2022-11-05 14:05:00",
+  "period_end": "2024-01-05 23:59:00",
+  "valid_hours": 10106,
+  "total_energy_kwh": 2891.2900046464492,
+  "avg_daily_kwh": 6.865780410281283,
+  "avg_load_w": 286.09637884884717,
+  "peak_hour_of_day": 21,
+  "peak_hour_avg_kwh": 0.33142100736835756,
+  "quietest_hour_of_day": 5,
+  "busiest_month": "2023-07",
+  "busiest_month_avg_daily_kwh": 10.719979341825454,
+  "highest_hour_kwh": 0.9690833333333334,
+  "highest_hour_timestamp": "2023-10-14 12:00:00",
+  "top10pct_hours_energy_share": 0.20537666150066988,
+  "daily_temp_correlation": 0.6295487172755074,
+  "cooling_slope_kwh_per_day_per_c": 0.6226015050468638,
+  "cooling_threshold_c": 19.5
+}

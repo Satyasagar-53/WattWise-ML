@@ -1,0 +1,45 @@
+{
+  "tariff_per_kwh_assumed": 0.12,
+  "insights": [
+    {
+      "title": "Cooling drives the summer bill",
+      "value": "21% of energy",
+      "detail": "Above 19.5 \u00b0C each extra degree adds about 0.6 kWh/day. A 10% cut in cooling energy saves about 53 kWh/year."
+    },
+    {
+      "title": "Evening peak",
+      "value": "23% in 18:00\u201323:00",
+      "detail": "The top 10% of hours use 21% of energy; moving 15% of that load off-peak shifts about 77 kWh/year (a saving only under time-of-use pricing)."
+    },
+    {
+      "title": "Always-on base load",
+      "value": "58 W",
+      "detail": "The 5th-percentile power is 58 W, about 508 kWh/year (20% of use). Trimming 20% of it saves about 102 kWh/year."
+    },
+    {
+      "title": "Weekend effect",
+      "value": "-1% vs weekdays",
+      "detail": "Average weekend day 6.8 kWh vs weekday 6.9 kWh."
+    }
+  ],
+  "scenarios": [
+    {
+      "action": "Cut cooling energy by 10%",
+      "kwh_year": 52.98294019129779,
+      "kind": "saved",
+      "cost_year": 6.357952822955735
+    },
+    {
+      "action": "Trim always-on base load by 20%",
+      "kwh_year": 101.616,
+      "kind": "saved",
+      "cost_year": 12.19392
+    },
+    {
+      "action": "Shift 15% of peak-hour energy off-peak",
+      "kwh_year": 77.20139049449975,
+      "kind": "shifted",
+      "cost_year": 9.26416685933997
+    }
+  ]
+}

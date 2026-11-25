@@ -1,0 +1,39 @@
+{
+  "dataset": "energy_weather_raw_data.csv",
+  "period": [
+    "2022-11-05 14:05:00",
+    "2024-01-05 23:59:00"
+  ],
+  "task_A_next_hour_forecast": {
+    "test_r2": 0.36910079977815924,
+    "test_mae_kwh": 0.05797513788321009,
+    "test_rmse_kwh": 0.07608847605086337,
+    "cv_r2_mean": 0.3816975183244559,
+    "baselines_test_r2": {
+      "Persistence (next hour = this hour)": 0.1572,
+      "Same hour last week": -0.5169,
+      "Typical profile for that hour": -0.691
+    }
+  },
+  "task_B_live_estimate": {
+    "cutoff_minute": 45,
+    "test_r2": 0.9383275802106498,
+    "test_mae_kwh": 0.017328823284819477,
+    "test_rmse_kwh": 0.023722772980429425,
+    "note": "Estimates the current hour from its first minutes; not a forecast."
+  },
+  "weather_ablation_test_r2": {
+    "Task A next-hour": {
+      "with weather": 0.2613,
+      "without weather": 0.2602,
+      "weather gain": 0.0011
+    },
+    "Task B live @ min 45": {
+      "with weather": 0.9366,
+      "without weather": 0.9345,
+      "weather gain": 0.0021
+    }
+  },
+  "leakage_guard": "same-minute voltage/current/power_factor are never used because active_power = V x I x PF",
+  "tariff_assumed_per_kwh": 0.12
+}
